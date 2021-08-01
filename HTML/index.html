@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <link rel="stylesheet" href="../STYLE/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai dev offline wiki</title>
+    
+    <link rel="icon" href="../RESOURCES/VECTOR/SamuraiLogo.svg">
+    <style>
+        A {
+            text-decoration: none;
+        }
+    </style>
+</head>
 
 <!-- 
     The right format for the entire project is as follows:
@@ -8,56 +22,86 @@
 
  -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samurai dev offline wiki</title>
-    <link rel="stylesheet" href="../STYLE/style.css">
-    <link rel="icon" href="../RESOURCES/VECTOR/SamuraiLogo.svg">
-    <style>A {text-decoration: none;}</style>
-</head>
 
 <body>
     <div class="grid-container">
+
+
         <div class="header">
-            <a href="index.html"><img src="../RESOURCES/VECTOR/SamuraiLogo.svg" alt="Samurai Dev Studios logo" style="height: 85%; width: auto; margin:8px;"></a>
+            <a href="index.html"><img src="../RESOURCES/VECTOR/SamuraiLogo.svg" alt="Samurai Dev Studios logo"
+                    style="height: 85%; width: auto; margin:8px;"></a>
+
+            <!--Help expand page-->
+            <div class="coopbtn">
+                <a href="dummy.html" id="scalable-text">Want to help expand the wiki?</a>
+            </div>
         </div>
+
+
         <div class="sidebar">
-                <div class="dropdown">
-                    <a href="dummy.html" class="dropbtn">
-                        Getting started
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+
+            <div class="dropdown">
+                <a href="dummy.html" class="dropbtn">
+                    Prerequisites
+                    <div class="dropdown-content">
+                        <a href="dummy.html" id="scalable-text">Install Ubuntu</a>
+                        <a href="dummy.html" id="scalable-text">Install Git And GitHub</a>
+                        <a href="dummy.html" id="scalable-text">Download This Wiki</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="dummy.html" class="dropbtn">
+                    Getting started
+                    <div class="dropdown-content">
+                        <a href="dummy.html" id="scalable-text">Install Device Drivers</a>
+                        <a href="dummy.html" id="scalable-text">Install UE4</a>
+                        <a href="dummy.html" id="scalable-text">Install Qt Creator For UE4</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="dummy.html" class="dropbtn">
+                    Resources
+                    <div class="dropdown-content">
+                        <a href="dummy.html" id="scalable-text">Unreal Engine Documentation</a>
+                        <a href="dummy.html" id="scalable-text">C++ Documentation</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="dummy.html" class="dropbtn">Projects
+                    <div class="dropdown-content">
+                        <div class="subpage-dropdown" id="shiftable-text">
+                            <a href="dummy.html" class="subpage-trigger">Misawa Oni
+                                <div class="subpage-content">
+                                    <a href="dummy.html" id="scalable-text">Info</a>
+                                    <a href="dummy.html" id="scalable-text">Pipeline</a>
+                                    <a href="dummy.html" id="scalable-text">Story</a>
+                                    <a href="dummy.html" id="scalable-text">Concept</a>
+                                    <a href="dummy.html" id="scalable-text">UI and graphics</a>
+                                    <a href="dummy.html" id="scalable-text">Releases</a>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="dropdown">
-                    <a href="dummy.html" class="dropbtn">
-                        Resources
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </a>
-                </div>
-                <div class="dropdown">
-                    <a href="dummy.html" class="dropbtn">
-                        Shortcuts
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
         </div>
+
+
         <div class="content">
             <div class="content-main">
-                
+                <h1>Welcome to SamuraiDev Studio</h1>
+                <div id="article-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis soluta corporis sed? Enim architecto odit adipisci laboriosam culpa, quia inventore temporibus, corrupti, eos qui officiis deserunt accusantium id optio illum.</p>
+                    <video controls width="550"; id="media">
+                        <source src="../RESOURCES/MP4/example-video.mp4"
+                                type="video/mp4">
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur voluptate voluptas, dicta sit repudiandae, ea tenetur voluptatem maxime neque consequatur ipsam aliquam cum rerum aperiam ipsum. Porro, quod dolores?</p>
+                    <img src="../RESOURCES/JPG/example-img.jpg" alt="Big floppa" id="media">
+                </div>
             </div>
         </div>
     </div>

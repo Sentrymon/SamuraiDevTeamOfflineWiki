@@ -1,21 +1,22 @@
 /* Background and basic style setup */
 
 body {
-  background-color: #3c6956;
+  background-color: 	#004c4c;
   margin: 0;
-  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
 }
-    /* Paragraph styling */
-    p{
+body::-webkit-scrollbar{
+  display: none;
+}
 
-    }
-    /* Link styling */
-    a{color: #adb6ae; font-size: 18pt;}
-    a:visited{text-decoration: none; color: #adb6ae;}
-    a:focus{text-decoration: none; color: #adb6ae;}
-    a:hover{text-decoration: none; color: #89ae93;}
-    a:hover, a:active { text-decoration: none; color: #89ae93;}
-
+  /* Link styling */
+  a{color: #66b2b2; font-size: 18pt;}
+  a:visited{text-decoration: none; color: #66b2b2;}
+  a:focus{text-decoration: none; color: #66b2b2;}
+  a:hover{text-decoration: none; color: #b2d8d8;}
+  a:hover, a:active { text-decoration: none; color: #b2d8d8;}
 /*  Grid container setup */
 
 .grid-container .header { grid-area: header; }
@@ -38,61 +39,139 @@ body {
 .grid-container .header{
   width:auto;
   height:100px;
-  background-color: blueviolet;
+  background-color: 	#008080;
+  display: flex;
+  flex-direction: row;
 }
 /* sidebar styling */
 .grid-container .sidebar{
   display: flex;
-  flex-direction: column;
-  margin-right: 45px; 
-  width: max-content;
-  height: 1005px;
-  background-color: crimson;
+  flex-direction: column; 
+  width: 200px;
+  height: auto;
+  background-color: #006666;
+  padding-bottom:220%;
 }
 
   /* Sidebar dropdown styling */
-  .dropbtn {
-    padding: 16px;
-    cursor: pointer;
+  .dropdown{
+    margin-top: 14px;
+    transition: margin-left .3s;
+    margin-left: -10px;
   }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  .dropdown:hover{
+    margin-left: 2px;
+  }
+
+  .dropbtn {
+    margin-right: 40px;
+    margin-left: 12px;
+    margin-top: 8px;
+    cursor: pointer;
   }
   
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: #008080;
+    border-radius: 8px;
   }
   
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    font-size: 16pt;
+    margin-top: 4px;
+    word-wrap: break-word;
   }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
+
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
   }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+
+  /* Sidebar sub-dropdown styling */
+
+  .subpage-trigger{
+    cursor: pointer;
+  }
+
+  .subpage-dropdown a{
+    font-size: 16pt;
+    margin-top: 4px;
+    margin-left: 0;
+    word-wrap: break-word;
+    display:flex;
+  }
+
+  .subpage-content{
+    display: none;
+    background-color: #487650;
+  }
+
+  .subpage-dropdown:hover .subpage-content{
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
   }
 
 /* content styling */
-.grid-container .content{
-
-}
 .grid-container .content .content-main{
-  margin: 6px;
-  border-radius: 8px; background-color: #487650;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px; 
+  background-color: #006666;
   font-size: 20pt;
+  height: max-content;
+  max-width: max-content;
+  
+  transform: translateX(-10%);
+  position: absolute;
+}
+
+
+.grid-container .content .content-main h1{
+  margin: 15px;
+  color: #66b2b2;
+  text-shadow: 1px 1px 2px 	#008080, 0 0 1em #66b2b2, 0 0 0.2em #66b2b2;
+}
+
+#article-text{
+  margin: 15px;
+  padding: 30px;
+  color: #66b2b2;
+}
+
+.content-main p{
+  margin: auto;
+  color: #66b2b2;
+}
+
+#media{
+  margin: 15px;
+  max-width: 550px;
+}
+
+/* Interactables */
+#scalable-text{
+  transition: transform .4s;
+}
+
+#scalable-text:hover{
+  transform: scale(1.15);
+}
+
+.grid-container .header .coopbtn{
+  height: max-content;
+  width: 120px;
+  padding: 20px;
+  background-color: 	#004c4c;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right:10px;
+}
+
+.grid-container .header .coopbtn a{
+  text-align: center;
+  font-size: 12pt;
+  word-wrap:break-word;  
 }

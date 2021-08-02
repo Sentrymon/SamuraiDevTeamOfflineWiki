@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../../STYLE/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai dev offline wiki</title>
+    
+    <link rel="icon" href="../../../RESOURCES/VECTOR/SamuraiLogo.svg">
+    <style>
+        A {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<!-- 
+    The right format for the entire project is as follows:
+
+    Div classes are written in lowercase and words are separated by dashes(-)
+
+ -->
+
+
+<body>
+    <div class="grid-container">
+
+
+        <div class="header">
+            <a href="../../../index.html"><img src="../../../RESOURCES/VECTOR/SamuraiLogo.svg" alt="Samurai Dev Studios logo"
+                    style="height: 85%; width: auto; margin:8px;"></a>
+
+            <!--Help expand page-->
+            <div class="coopbtn">
+                <a href="../../dummy.html" id="scalable-text">Want to help expand the wiki?</a>
+            </div>
+        </div>
+
+
+        <div class="sidebar">
+
+            <div class="dropdown">
+                <a href="../../dummy.html" class="dropbtn">
+                    Prerequisites
+                    <div class="dropdown-content">
+                        <a href="install-ubuntu.html" id="scalable-text">Install Ubuntu</a>
+                        <a href="install-git.html" id="scalable-text">Install Git And GitHub</a>
+                        <a href="download-wiki.html" id="scalable-text">Download This Wiki</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="../../dummy.html" class="dropbtn">
+                    Getting started
+                    <div class="dropdown-content">
+                        <a href="../../articles/getting-started/install-drivers.html" id="scalable-text">Install Device Drivers</a>
+                        <a href="../../articles/getting-started/install-ue4.html" id="scalable-text">Install UE4</a>
+                        <a href="../../articles/getting-started/install-qt.html" id="scalable-text">Install Qt Creator For UE4</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="../../dummy.html" class="dropbtn">
+                    Resources
+                    <div class="dropdown-content">
+                        <a href="../../dummy.html" id="scalable-text">Unreal Engine Documentation</a>
+                        <a href="../../dummy.html" id="scalable-text">C++ Documentation</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="../../dummy.html" class="dropbtn">Projects
+                    <div class="dropdown-content">
+                        <div class="subpage-dropdown" id="shiftable-text">
+                            <a href="../../dummy.html" class="subpage-trigger">Misawa Oni
+                                <div class="subpage-content">
+                                    <a href="../../dummy.html" id="scalable-text">Info</a>
+                                    <a href="../../dummy.html" id="scalable-text">Pipeline</a>
+                                    <a href="../../dummy.html" id="scalable-text">Story</a>
+                                    <a href="../../dummy.html" id="scalable-text">Concept</a>
+                                    <a href="../../dummy.html" id="scalable-text">UI and graphics</a>
+                                    <a href="../../dummy.html" id="scalable-text">Releases</a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="subpage-dropdown" id="shiftable-text">
+                            <a href="../../dummy.html" class="subpage-trigger">Holo game
+                                <div class="subpage-content">
+                                    <a href="../../dummy.html" id="scalable-text">Info</a>
+                                    <a href="../../dummy.html" id="scalable-text">Pipeline</a>
+                                    <a href="../../dummy.html" id="scalable-text">Story</a>
+                                    <a href="../../dummy.html" id="scalable-text">Concept</a>
+                                    <a href="../../dummy.html" id="scalable-text">UI and graphics</a>
+                                    <a href="../../dummy.html" id="scalable-text">Releases</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="content-main">
+                <h1>Preparation and installation of Ubuntu</h1>
+                <div id="article-text">
+                    <h3>Foreword</h3>
+                    <p>
+                        So the time has come, time to install Ubuntu, the operating system I decided the group should use. The operating system(OS) is the most important and essential software we need on our computers. Different reasons for my decision of OS include, but is not limited to:
+                    </p>
+                    <ul style="margin-top: 5px;">
+                        <li>Ubuntu works the exact same way no matter your hardware, this allows us as a team to co-operate easier than we would be able to in other operating systems like Windows 10 or MacOS</li>
+                        <li>Ubuntu is “windows-like”. The fact that most, if not all, of us come from a background of using windows it makes it a lot easier to use. </li>
+                        <li>The vast amount of tutorials available to the public, for free. </li>
+                        <li>Ubuntu features an amazing user interface nearly perfectly streamlined for effectivity.</li>
+                        <li>The ease to work with files, directories and software in CLI's (Command Line Interface)</li>
+                        <li>You can update all packages and even the OS itself without restarting your computer. </li>
+                        <li>And finally, the biggest reason: Ubuntu takes more than 50% less resources. This is vital for our members who have limited RAM and computing power. </li>
+                    </ul>
+
+                    <h3>Step 1 - Download the installation media</h3>
+                    <p>We need to talk about some things before we go ahead and install Ubuntu. While Ubuntu clearly is the superior OS here we don't actually have to remove windows. Instead we'll do a so-called dualboot. 
+                        A dualboot allows us to, at boot up, decide what operating system we want to use.</p>
+                    <p>What you will need follow this tutorial include:</p>
+                    <ul>
+                        <li>~25gb of available storage on your disk</li>
+                        <li>A USB stick with at least 4GB of storage (alternatively you can use a SD card, DVD/CD disc etc. depending on what hardware you have)</li>
+                        <li>A live internet connection</li>
+                        <li>About 30-40 mins of your day</li>
+                        
+                    </ul>
+                    <div>
+                        <img src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/AlternativeUbuntuDownloadPage.png" alt="Alternative Ubuntu Download page" id="media">
+                        <img src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/UbuntuDownloadPage.png" alt="Ubuntu download page" id="media">
+                    </div>
+                    <p>First of you need to download the installation media to your USB. You can do that 
+                        <a style="text-decoration: underline;" href="https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64">here.</a>
+                        Alternatively, if you want faster downloads you can download it with a BitTorrent <a style="text-decoration: underline;" href="https://releases.ubuntu.com/20.04/ubuntu-20.04.2.0-desktop-amd64.iso.torrent?_ga=2.35454497.1056776825.1627838526-269241977.1627739290">here</a>
+                    </p>
+                    <img id="media"; src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/DownloadMedia.png" alt="The download media">
+                    <p>You should now have something that looks like the image above on your selected boot media(USB stick/SD card) and you're now ready to move to the next step</p>
+                    <video controls width="550"; id="media">
+                        <source src="../../../RESOURCES/MP4/UbuntuInstallation.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <h3>Step 2 - Partition your disk</h3>
+                    <p>What is a disk partition you ask? That's what I'm about to tell you. <br>
+                    A partition is basically a index of a range with registries on a disk. We'll use this index(partition) to tell the computer where to store windows data and where to store Ubuntu data.</p>
+                    <div>
+                        <img id="media"; src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/DiskManagementOpen.png" alt="how to open disk management">
+                        <img id="media"; src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/ShrinkVolume.png" alt="How to opem shrink volume options">
+                    </div>
+                    <p>Open the diskmanager by rightclicking the windows flag and then choose "Disk management" <br>
+                        Please be aware of the fact that the two following actions might take some time depending on your hardware. You can now sort the list of disks after "free space". rightclick the disk which has the most available storage space free. Then choose "shrink volume"</p>
+                    <img id="media"; src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/ShrinkOptions.png" alt="What options to use while shrinking">
+                    <p>Now, if you have enough space, shrink the volume with <strong>133120Mb.</strong> This is the amount I recommend for the Ubuntu installation if you're going to compile Unreal Engine 4. If not, you should get away with <strong>51200Mb</strong>. You're now done here. Tim eto procede to next step</p>
+                    
+
+                    <h3>Step 3 - Installing Ubuntu</h3>
+                    <p>You have now downloaded the operating system and fixed a place for it to go. Now you're ready to actually install the OS on your computer.</p>
+                    <img id="media"; src="../../../RESOURCES/WEBP/InstallOrTry.webp" alt="The try or install screen">
+                    <p>When booting up with the USB plugged in you should be greeted by the screen above where you have the choise to try or install Ubuntu. Since we want to continue using Ubuntu we'll choose "Install Ubuntu"</p>
+                    <img id="media"; src="../../../RESOURCES/WEBP/ChooseKeyboardLayout.webp" alt="Choose keyboard layout">
+                    <p>Next up is choosing the keyboard layout. If you're from the USA you can just press continue</p>
+                    <img id="media"; src="../../../RESOURCES/PNG/TUTORIAL_METERIAL/UbdatesAndSoftware.png" alt="More settings">
+                    <p>We'll choose minimal installation and we'll update software later. We'll also choose to install drivers to make sure that all your hardware works properly.</p>
+                    <img id="media"; src="../../../RESOURCES/WEBP/InstallationType.webp" alt="Installation type">
+                    <p>Here we will choose to install ubuntu alongside Windows. If you want to replace windows completely feel free to go ahead but I think the best option for most people is a dualboot. <br>
+                    Then you choose your timezone and user login. I'd recommend using a password that you'll remember or write it up. You tend to have to use it quite a lot. You'll be asked to reboot once the installation is done. Just go ahead and do so. Do boot into windows again you have to use the arrow keys to move down to windows and press enter while in the boot menu.</p>
+                    
+                    <h3 style="margin-top: 60px;">Next up is: <a href="../../../HTML/articles/Prerequisites/install-git.html">Install Git And GitHub</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

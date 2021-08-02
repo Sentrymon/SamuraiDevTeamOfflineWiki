@@ -3,9 +3,10 @@
 body {
   background-color: 	#004c4c;
   margin: 0;
+
+
   -ms-overflow-style: none;
   scrollbar-width: none;
-
 }
 body::-webkit-scrollbar{
   display: none;
@@ -48,15 +49,15 @@ body::-webkit-scrollbar{
   display: flex;
   flex-direction: column; 
   width: 200px;
-  height: auto;
+  height: 55vh;
   background-color: #006666;
-  padding-bottom:220%;
+  border-bottom-right-radius: 24px;
 }
 
   /* Sidebar dropdown styling */
   .dropdown{
     margin-top: 14px;
-    transition: margin-left .3s;
+    transition: margin-left .6s;
     margin-left: -10px;
   }
   .dropdown:hover{
@@ -74,6 +75,7 @@ body::-webkit-scrollbar{
     display: none;
     background-color: #008080;
     border-radius: 8px;
+    transform:scaleY(0);
   }
   
   .dropdown-content a {
@@ -86,6 +88,7 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     padding:0 20px;
+    transform: scaleY(1);
   }
 
   /* Sidebar sub-dropdown styling */
@@ -104,7 +107,7 @@ body::-webkit-scrollbar{
 
   .subpage-content{
     display: none;
-    background-color: #487650;
+    background-color: #008080;
   }
 
   .subpage-dropdown:hover .subpage-content{
@@ -134,20 +137,27 @@ body::-webkit-scrollbar{
   text-shadow: 1px 1px 2px 	#008080, 0 0 1em #66b2b2, 0 0 0.2em #66b2b2;
 }
 
+.content-main p{
+  margin: auto;
+  margin-bottom: 1vw;
+  color: #66b2b2;
+}
+
+.content-main h3{
+  margin-top: 0;
+  text-decoration: underline;
+}
+
 #article-text{
   margin: 15px;
   padding: 30px;
   color: #66b2b2;
-}
-
-.content-main p{
-  margin: auto;
-  color: #66b2b2;
+  font-size: 16pt;
 }
 
 #media{
   margin: 15px;
-  max-width: 550px;
+  max-width: 45%;
 }
 
 /* Interactables */

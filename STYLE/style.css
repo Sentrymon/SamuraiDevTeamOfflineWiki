@@ -82,7 +82,11 @@ body::-webkit-scrollbar{
     font-size: 16pt;
     margin-top: 4px;
     word-wrap: break-word;
+    background-color: rgba(0, 110, 110, 0.4);
+    padding: 4px;
+    border-radius: 6px;
   }
+  .dropbtn a{display: none;}
 
   .dropdown:hover .dropdown-content {
     display: flex;
@@ -115,6 +119,9 @@ body::-webkit-scrollbar{
     flex-direction: column;
     padding:0 20px;
   }
+
+  .grid-container .sidebar .dropdown .dropdown-content .dropbtn{display: none;}
+  .grid-container .sidebar .dropdown .dropdown-content .subpage-dropdown .subpage-content .subpage-trigger{display: none;}
 
 /* content styling */
 .grid-container .content .content-main{
